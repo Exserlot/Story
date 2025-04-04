@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    font-family: "Kanit", sans-serif;
+    background: #1a1a1a;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    cursor: pointer;
+}
+.card {
+    position: relative;
+    height: 900px;
+    width: 460px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-image 0.5s ease;
+    background-image: url('assets/img.png');
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-color: #94d2e9;
+    /* cursor: pointer; */
+}
+.progress_bar_wrap {
+    width: 100%;
+    height: 5px;
+    border-radius: 10px;
+    background: #848380;
+    cursor: pointer; /* เพิ่มให้สามารถคลิกได้ */
+}
+.progress_bar {
+    width: 0;
+    height: 5px;
+    border-radius: 10px;
+    background: #fff;
+    transition: width 0.1s ease;
+}
+.card_controls {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 600;
+    font-size: 14px;
+}
+.profile_img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+}
+.yours {
+    color: #fff;
+    font-size: large;
+}
+.time {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 0px 5px;
+    border-radius: 3px;
+    color: #dbdbdb;
+    text-align: center;
+}
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.song_wrapper {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    bottom: 20%;
+    left: 50%;
+    user-select: none;
+    transform: translateX(-50%);
+    gap: 5px;
+}
+.lyrics {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    min-width: 250px;
+    max-width: 1050px;
+    word-break: break-word;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 15px;
+}
+.cover {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: #fff;
+    width: 170px;
+    border-radius: 5px;
+}
+.cover img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.col {
+    display: flex;
+    flex-direction: column;
+}
+.song_name {
+    font-weight: 600;
+    font-size: 14px;
+}
+.song_artist {
+    font-size: 13px;
+}
+.card-body {
+    height: 100vh;
+}
